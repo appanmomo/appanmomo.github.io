@@ -1,0 +1,45 @@
+/* Header - no float, full width */ 
+.top {
+
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-bottom: 10px;
+}
+
+/* Nav - float left */
+.left {
+
+    width: 20%;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Main stories - float right */
+.background {
+
+    width: 75%;
+    float: right;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.entertainment {
+
+    width: 75%;
+    float: right;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Footer - clear both, center */
+.bottom {
+
+    clear: both;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px 0;
+}
