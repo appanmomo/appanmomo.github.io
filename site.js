@@ -17,3 +17,4 @@ if (isMorning) {
     welcome.textContent = 'Welcome!' // set a default welcome message
 }
 
+localStorage.setItem("It's a secret to everybody.", "The prophecy has been fulfilled." )
