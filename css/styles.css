@@ -3,16 +3,18 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
     color: rgb(51, 49, 49);
-    margin: 0%;
-    padding: 0%;
+    margin: 0px;
+    padding: 0px;
+    background-color:#fadede;
 }
 
 #wrapper {
 
-    width: 1000px;
-    background-color: rgb(248, 212, 198);
-    padding: 1%;
-    margin-left: 100px;
+    width: 80%;
+    background-color: rgb(199, 199, 199);
+    padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 li {
@@ -22,14 +24,17 @@ li {
 
 ul {
 
-    padding-left: 0%;
+    max-width: 700px;
+    margin: 10px auto;
+    text-align: left;
+    padding-left: 20px;
 }
 
 a:link, a:visited {
 
     text-decoration: none;
     line-height: 1.6;
-    color: rgb(110, 155, 136);
+    color: rgb(10, 34, 141);
 }
 
 /* fix font and heading styles */
@@ -47,6 +52,13 @@ h1, h2 {
     margin-top: 20px;
 }
 
+p {
+
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
 h1 {
 
     font-size: 1.5em
@@ -55,6 +67,30 @@ h1 {
 h2 {
 
     font-size: 1.2em;
+}
+
+#mainNav {
+
+    float: right;
+    position: static;
+    text-align: center;
+}
+
+#mainNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#mainNav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#mainNav a {
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* add hover on links*/
@@ -77,4 +113,31 @@ img {
 section {
     
     padding: 15px;
+}
+
+#carousel {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+#carousel img {
+
+    max-height: 300px;
+    aspect-ratio: auto 300 / 400;
+    border-radius: 10px;
+}
+
+#buttons {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
 }
