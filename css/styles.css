@@ -5,7 +5,7 @@ body {
     color: rgb(51, 49, 49);
     margin: 0px;
     padding: 0px;
-    background-color:#fadede;
+    background-color:#f6e9e9;
 }
 
 #wrapper {
@@ -50,6 +50,8 @@ h1, h2 {
     font-size: 1.5em;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
+    clear: both;
 }
 
 p {
@@ -71,16 +73,16 @@ h2 {
 
 #mainNav {
 
-    float: right;
+    float: left;
     position: static;
     text-align: center;
 }
 
 #mainNav ul {
     list-style: none;
-    padding: 0;
-    margin: 10px auto;
-    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
 }
 
 #mainNav li {
@@ -110,13 +112,7 @@ img {
     border: 1px solid black;
 }
 
-section {
-    
-    padding: 15px;
-}
-
 #carousel {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,14 +123,12 @@ section {
 }
 
 #carousel img {
-
     max-height: 300px;
     aspect-ratio: auto 300 / 400;
     border-radius: 10px;
 }
-
+    
 #buttons {
-
     display: flex;
     justify-content: center;
     align-items: center;
