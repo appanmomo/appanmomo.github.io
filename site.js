@@ -1,3 +1,5 @@
+(async () => {
+
 const hours = new Date().getHours() // get the current hour
 
 const isMorning = hours >= 4 && hours < 12 // is it morning?
@@ -96,3 +98,34 @@ const renderTodos = () => {
 };
 
 renderTodos();
+
+const getRandomPokemon = async () => {
+    const url = 'https://pokeapi.co/api/v2/pokemon/' + Math.floor(Math.random() * 1025)
+
+    const response = await fetch(url);
+    const data = await response.json();
+
+    return data;
+};
+
+const renderPokemon = pokemon => {
+    const pokemonContainer = document.querySelector('#pokemon');
+
+    pokemonContainer.innerHTML = '';
+
+    const img = document.createElement('img');
+    img.src = pokemon.sprites.front_default;
+    img.alt = pokemon.name;
+
+    pokemonContainer.append(img);
+};
+
+document.querySelector('#fetch-pokemon').addEventListener('click', async () => {
+    const pokemon = await getRandomPokemon();
+    renderPokemon(pokemon);
+});
+
+const pokemon = await getRandomPokemon();
+renderPokemon(pokemon);
+
+})();
